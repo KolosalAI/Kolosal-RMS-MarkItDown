@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Document - Kolosal RMS MarkItDown Test</title>
+</head>
+<body>
+    <header>
+        <h1>Sample HTML Document</h1>
+        <p><em>This is a test document for the Kolosal RMS MarkItDown API</em></p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>This HTML document demonstrates the conversion capabilities of the MarkItDown API. The server can convert this HTML content into clean Markdown format while preserving the document structure.</p>
+        </section>
+        
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Headers</strong> - Converted to markdown headers</li>
+                <li><strong>Paragraphs</strong> - Maintained as text blocks</li>
+                <li><strong>Lists</strong> - Both ordered and unordered</li>
+                <li><strong>Links</strong> - <a href="https://github.com/microsoft/markitdown">External links</a> are preserved</li>
+                <li><strong>Emphasis</strong> - <em>Italic</em> and <strong>bold</strong> text</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Code Examples</h2>
+            <p>The API can also handle code blocks:</p>
+            <pre><code>
+def hello_world():
+    print("Hello from MarkItDown!")
+    return "Success"
+            </code></pre>
+        </section>
+        
+        <section>
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Format</th>
+                        <th>Endpoint</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PDF</td>
+                        <td>/parse_pdf</td>
+                        <td>✅ Supported</td>
+                    </tr>
+                    <tr>
+                        <td>DOCX</td>
+                        <td>/parse_docx</td>
+                        <td>✅ Supported</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>/parse_html</td>
+                        <td>✅ Supported</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2>Blockquotes</h2>
+            <blockquote>
+                <p>"MarkItDown is extremely close to plain text, with minimal markup or formatting, but still provides a way to represent important document structure."</p>
+                <footer>— Microsoft MarkItDown Documentation</footer>
+            </blockquote>
+        </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <p><small>This document was created to test the Kolosal RMS MarkItDown API conversion capabilities.</small></p>
+        <p><small>Built with ❤️ using <a href="https://github.com/microsoft/markitdown">Microsoft MarkItDown</a></small></p>
+    </footer>
+</body>
+</html>
