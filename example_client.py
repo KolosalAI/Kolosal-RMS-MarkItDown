@@ -3,7 +3,7 @@ Example client script to demonstrate how to use the Kolosal RMS MarkItDown API
 
 This script show    print("To test with your own files:")
     print("1. Update the file paths in this script")
-    print("2. Make sure the API server is running on http://localhost:4040")
+    print("2. Make sure the API server is running on http://localhost:8081")
     print("3. Run this script again")w to make requests to the API endpoints from Python.
 """
 
@@ -12,7 +12,7 @@ import os
 import json
 
 # API base URL
-BASE_URL = "http://localhost:4040"
+BASE_URL = "http://localhost:8081"
 
 def upload_file(endpoint: str, file_path: str) -> dict:
     """
